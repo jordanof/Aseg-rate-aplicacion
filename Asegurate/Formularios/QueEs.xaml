@@ -1,0 +1,49 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Asegurate.Formularios.QueEs"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="White" x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ListBox Margin="0,0,0,10">
+                <ListBoxItem Height="1655">
+                    <Grid Height="1621" Width="454">
+                        <TextBlock Foreground="Red" TextAlignment="Center" FontSize="25" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Misión del Servicio Integrado de Seguridad ECU 911" VerticalAlignment="Top" Margin="30,171,0,0"/>
+                        <TextBlock Foreground="DarkBlue" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Gestionar en todo el territorio ecuatoriano, la atención de las situaciones de emergencia de la ciudadanía, reportadas a través del número 911, y las que se generen por video vigilancia y monitoreo de alarmas, mediante el despacho de recursos de respuesta especializados pertenecientes a organismos públicos y privados articulados al sistema, con la finalidad de contribuir, de manera permanente, a la consecución y mantenimiento de la seguridad integral ciudadana." VerticalAlignment="Top" Margin="10,249,0,0"/>
+
+                        <TextBlock Foreground="Red" TextAlignment="Center" FontSize="25" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Visión del Servicio Integrado de Seguridad ECU 911" VerticalAlignment="Top" Margin="30,581,0,0"/>
+                        <TextBlock Foreground="DarkBlue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ser una institución nacional líder y modelo en la región para la coordinación de servicios de emergencia utilizando tecnología de punta en sistemas y telecomunicaciones, comprometidos con la calidad, seguridad, salud en el trabajo y el medio ambiente que permitan brindar un servicio único y permanente a la ciudadanía." VerticalAlignment="Top" Margin="10,653,0,0"/>
+
+                        <TextBlock Foreground="Red" TextAlignment="Center" FontSize="25" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Valores del Servicio Integrado de Seguridad ECU 911" VerticalAlignment="Top" Margin="30,857,0,0"/>
+
+                        <TextBlock Foreground="Black" FontSize="25" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Productividad" VerticalAlignment="Top" Margin="8,933,0,0"/>
+                        <TextBlock Foreground="DarkBlue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Es el grado de utilización efectiva de cada elemento de producción, es sobre todo una actitud mental, es buscar la constante mejora de lo que ya existe, basado en la convicción de que uno pueda hacer mejor las cosas hoy que ayer. Requiere esfuerzos continuados para adaptar las actividades a las condiciones cambiantes y aplicar nuevas técnicas y métodos." VerticalAlignment="Top" Margin="10,969,0,0"/>
+                        <TextBlock Foreground="Black" FontSize="25" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Responsabilidad" VerticalAlignment="Top" Margin="8,1191,0,0"/>
+                        <TextBlock Foreground="DarkBlue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ser responsable es llevar a cabo sus tareas con diligencia, seriedad y prudencia. Es asumir consecuencias de nuestras acciones y decisiones; es tratar de que todos nuestros actos sean realizados de acuerdo con una noción de justicia y de cumplimiento del deber en todos los sentidos." VerticalAlignment="Top" Margin="10,1227,0,0"/>
+                        <TextBlock Foreground="Black" FontSize="25" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Trabajo en Equipo" VerticalAlignment="Top" Margin="8,1395,0,0"/>
+                        <TextBlock Foreground="DarkBlue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Es un valor, que permite direccionar a los servidores en consolidarse en un equipo de trabajo de alto rendimiento en donde cada integrante es pieza fundamental en la consecución de su desarrollo personal, profesional e institucional." VerticalAlignment="Top" Margin="10,1431,0,0" Width="433"/>
+                        <Image Source="/Imagenes/ECU/linea.jpg" Stretch="Fill" HorizontalAlignment="Left" Height="127" VerticalAlignment="Top" Width="433" Margin="8,10,0,0"/>
+
+                    </Grid>
+                </ListBoxItem>
+            </ListBox>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,36 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Asegurate.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.Background>
+                <ImageBrush Stretch="Fill" ImageSource="/fondos/fondos/menu.png"/>
+            </Grid.Background>
+            <Button Name="btnECU" Content="" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="57,395,0,0" VerticalAlignment="Top" Click="btnECU_Click" Height="160" Width="162"/>
+            <Button Name="btnPolicia" Content="" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="57,34,0,0" VerticalAlignment="Top" Click="btnPolicia_Click" Height="158" Width="162"/>
+            <Button Name="btnBomberos" Content="" BorderBrush="Transparent"  HorizontalAlignment="Left" Margin="240,34,0,0" VerticalAlignment="Top" Click="btnBomberos_Click" Width="156" Height="158"/>
+            <Button Name="btnReportar" Content="" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="57,212,0,0" VerticalAlignment="Top" Click="btnReportar_Click" Height="160" Width="162"/>
+            <Button Name="btnSeguir" Content="" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="240,212,0,0" VerticalAlignment="Top" Click="btnSeguir_Click" Height="160" Width="156"/>
+            <Button x:Name="btnDenunciar" Content="" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="240,395,0,0" VerticalAlignment="Top" Click="btnDenunciar_Click" Width="156" Height="160"/>
+            <Button x:Name="btnMapa" Content="" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="157,575,0,0" VerticalAlignment="Top" Click="btnMapa_Click" Width="160" Height="157" RenderTransformOrigin="0.537,0.25"/>
+        </Grid>
+    </Grid>
+</phone:PhoneApplicationPage>
